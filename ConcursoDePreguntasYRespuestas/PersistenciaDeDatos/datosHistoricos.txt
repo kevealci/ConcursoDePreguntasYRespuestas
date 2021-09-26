@@ -1,0 +1,14 @@
+El Jugador acumulo: $100 y se Retiro
+El Jugador acumulo: $121100 y Gano
+El Jugador acumulo: $11100 y se Retiro
+El Jugador acumulo: $0 y Perdio
+El Jugador acumulo: $0 y se Retiro
+El Jugador acumulo: $0 y Perdio
+El Jugador acumulo: $11100 y se Retiro
+El Jugador acumulo: $121100 y Gano
+El Jugador acumulo: $21100 y se Retiro
+El Jugador acumulo: $0 y Perdio
+El Jugador acumulo: $121100 y Gano
+El Jugador acumulo: $0 y Perdio
+El Jugador acumulo: $21100 y se Retiro
+El Jugador acumulo: $121100 y Gano

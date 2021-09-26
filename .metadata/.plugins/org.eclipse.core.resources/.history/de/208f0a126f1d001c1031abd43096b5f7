@@ -1,0 +1,25 @@
+package entidades;
+
+import util.Posicion;
+
+public class Ronda {
+	
+	private Premio premio;
+	private Categoria categoria;
+	private Pregunta preguntaElegida;
+	
+	/**
+	 * @param premio
+	 * @param categoria
+	 */
+	public Ronda(Premio premio, Categoria categoria) {
+		this.premio = premio;
+		this.categoria = categoria;
+	}
+	
+	public Pregunta elegirPregunta(int numeroPreguntas){
+		int posicionAleatoria = Posicion.obtenerPosicion(numeroPreguntas);
+		return categoria.getPreguntas().get(posicionAleatoria);
+	}
+	
+}

@@ -1,0 +1,21 @@
+package test;
+
+import entidades.Ronda;
+import util.CrearPreguntas;
+import util.CrearPremios;
+
+public class TestRonda {
+
+	public static void main(String[] args) {
+		
+		int ronda1 = 1;
+		
+		Ronda ronda = new Ronda(ronda1, CrearPremios.obtenerPremios().get(0), CrearPreguntas.obtenerPreguntas());
+		
+		ronda.elegirPregunta();
+
+		System.out.println(ronda);
+
+	}
+
+}

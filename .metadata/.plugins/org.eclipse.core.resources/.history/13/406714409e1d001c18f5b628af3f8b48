@@ -1,0 +1,30 @@
+package test;
+
+import java.util.ArrayList;
+
+import entidades.Opcion;
+import entidades.Pregunta;
+
+public class TestPregunta {
+
+	public static void main(String[] args) {
+		
+		Pregunta pregunta = new Pregunta("Pregunta de prueba");
+		
+		ArrayList<Opcion> opciones = pregunta.getOpciones();
+		
+		Opcion opcion1 = new Opcion(true, "Prueba1");
+		Opcion opcion2 = new Opcion(false, "Prueba2");
+		Opcion opcion3 = new Opcion(true, "Prueba3");
+		Opcion opcion4 = new Opcion(false, "Prueba4");
+		
+		opciones.add(opcion1);
+		opciones.add(opcion2);
+		opciones.add(opcion3);
+		opciones.add(opcion4);
+		
+		System.out.println(pregunta);
+
+	}
+
+}

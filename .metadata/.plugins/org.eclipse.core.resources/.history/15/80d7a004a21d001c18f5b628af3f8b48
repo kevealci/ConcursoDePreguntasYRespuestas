@@ -1,0 +1,27 @@
+package entidades;
+
+import java.util.ArrayList;
+
+public class Pregunta {
+
+	private String pregunta;
+	private Categoria categoria;
+	private ArrayList<Opcion> opciones;
+
+	/**
+	 * @param pregunta
+	 */
+	public Pregunta(String pregunta) {
+		opciones = new ArrayList<Opcion>();
+		this.pregunta = pregunta;
+	}
+
+	public void agregarCategoria(String categoria, String nivel) {
+		this.categoria = new Categoria(categoria, nivel);
+	}
+
+	public void agregarOpcion( String opcion,boolean valida,) {
+		opciones.add(new Opcion(opcion, valida));
+	}
+
+}

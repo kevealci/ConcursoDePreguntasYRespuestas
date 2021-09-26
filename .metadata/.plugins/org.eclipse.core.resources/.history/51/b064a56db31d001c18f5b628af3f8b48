@@ -1,0 +1,25 @@
+package util;
+
+import java.util.ArrayList;
+
+import entidades.Nivel;
+import entidades.Pregunta;
+
+public class CrearPreguntas {
+
+	public ArrayList<Pregunta> obtenerPreguntas() {
+
+		Pregunta pregunta1 = new Pregunta("Pregunta 1 de prueba");
+
+		pregunta1.agregarCategoria("Juego", new Nivel(1));
+		pregunta1.agregarOpcion("False", false);
+		pregunta1.agregarOpcion("True", true);
+		pregunta1.agregarOpcion("False", false);
+		pregunta1.agregarOpcion("False", false);
+
+		for(int i=0 ; i<25;i++){
+			System.out.println("Pregunta pregunta"+i+1+ "= new Pregunta(\"Pregunta"+i+"de prueba\");");
+		}
+	}
+
+}

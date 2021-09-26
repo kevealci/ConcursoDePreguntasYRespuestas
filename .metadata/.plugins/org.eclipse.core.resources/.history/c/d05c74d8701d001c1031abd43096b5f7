@@ -1,0 +1,12 @@
+package util;
+
+public class Posicion {
+	
+	public static int obtenerPosicion(int numeroPreguntas){
+		int min = 0;
+		int max = numeroPreguntas;
+		int range = (max - min) + 1;
+		return (int) (Math.random()*range)+ min;
+	}
+
+}

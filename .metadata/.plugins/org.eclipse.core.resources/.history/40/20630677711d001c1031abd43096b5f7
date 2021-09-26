@@ -1,0 +1,59 @@
+package test;
+
+import java.util.ArrayList;
+
+import entidades.Categoria;
+import entidades.Opcion;
+import entidades.Pregunta;
+import entidades.Premio;
+import entidades.Ronda;
+import util.Nivel;
+
+public class TestRonda {
+
+	public static void main(String[] args) {
+
+Pregunta pregunta1 = new Pregunta("Pregunta 1 de prueba");
+		
+		ArrayList<Opcion> p1opciones = pregunta1.getOpciones();
+		
+		Opcion p1opcion1 = new Opcion(true, "Prueba1");
+		Opcion p1opcion2 = new Opcion(false, "Prueba2");
+		Opcion p1opcion3 = new Opcion(true, "Prueba3");
+		Opcion p1opcion4 = new Opcion(false, "Prueba4");
+		
+		p1opciones.add(p1opcion1);
+		p1opciones.add(p1opcion2);
+		p1opciones.add(p1opcion3);
+		p1opciones.add(p1opcion4);
+		
+		Pregunta pregunta2 = new Pregunta("Pregunta 2 de prueba");
+		
+		ArrayList<Opcion> p2opciones = pregunta2.getOpciones();
+		
+		Opcion p2opcion1 = new Opcion(true, "Prueba1");
+		Opcion p2opcion2 = new Opcion(false, "Prueba2");
+		Opcion p2opcion3 = new Opcion(true, "Prueba3");
+		Opcion p2opcion4 = new Opcion(false, "Prueba4");
+		
+		p2opciones.add(p2opcion1);
+		p2opciones.add(p2opcion2);
+		p2opciones.add(p2opcion3);
+		p2opciones.add(p2opcion4);
+		
+		Categoria categoria = new Categoria(Nivel.NIVEL_UNO);
+		
+		categoria.getPreguntas().add(pregunta1);
+		categoria.getPreguntas().add(pregunta2);
+		
+		Premio premio = new Premio(100);
+		
+		Ronda ronda = new Ronda(premio, categoria);
+		
+		ronda.elegirPregunta(2);
+		
+		System.out.println(ronda);
+				
+	}
+
+}

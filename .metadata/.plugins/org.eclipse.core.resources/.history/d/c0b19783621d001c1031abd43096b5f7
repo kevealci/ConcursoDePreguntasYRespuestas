@@ -1,0 +1,57 @@
+package entidades;
+
+import java.util.ArrayList;
+
+public class Pregunta {
+	
+	private String pregunta;
+	private ArrayList<Opcion> opciones;
+	
+	/**
+	 * @param pregunta
+	 */
+	public Pregunta(String pregunta) {
+		this.pregunta = pregunta;
+		opciones = new ArrayList<Opcion>();
+	}
+
+	/**
+	 * @return the pregunta
+	 */
+	public String getPregunta() {
+		return pregunta;
+	}
+
+	/**
+	 * @param pregunta the pregunta to set
+	 */
+	public void setPregunta(String pregunta) {
+		this.pregunta = pregunta;
+	}
+
+	/**
+	 * @return the opciones
+	 */
+	public ArrayList<Opcion> getOpciones() {
+		return opciones;
+	}
+
+	/**
+	 * @param opciones the opciones to set
+	 */
+	public void setOpciones(ArrayList<Opcion> opciones) {
+		this.opciones = opciones;
+	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Pregunta [pregunta=" + pregunta + ", opciones=" + opciones + "]";
+	}
+	
+	
+	
+
+}

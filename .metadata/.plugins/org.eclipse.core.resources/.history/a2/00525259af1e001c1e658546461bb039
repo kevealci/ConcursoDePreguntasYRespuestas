@@ -1,0 +1,11 @@
+package admin;
+
+public class AdminJuego {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package test;
+
+import java.util.ArrayList;
+
+import entidades.Pregunta;
+import entidades.Ronda;
+import util.CrearPreguntas;
+import util.CrearPremios;
+
+public class TestRonda {
+
+	public static void main(String[] args) {
+		
+		int ronda1 = 1;
+		ArrayList<Pregunta> preguntas = CrearPreguntas.obtenerPreguntas();
+		System.out.println(preguntas);
+		Ronda ronda = new Ronda(ronda1, CrearPremios.obtenerPremios().get(0), preguntas );
+		
+		ronda.elegirPregunta();
+
+		System.out.println(ronda);
+
+	}
+
+}

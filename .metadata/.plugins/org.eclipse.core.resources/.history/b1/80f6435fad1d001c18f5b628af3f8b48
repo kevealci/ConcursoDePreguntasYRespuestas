@@ -1,0 +1,17 @@
+package test;
+
+import util.Nivel;
+
+public class TestNivel {
+
+	public static void main(String[] args) {
+
+		System.out.println(Nivel.NIVEL_UNO);
+		System.out.println(Nivel.NIVEL_DOS);
+		System.out.println(Nivel.NIVEL_TRES);
+		System.out.println(Nivel.NIVEL_CUATRO);
+		System.out.println(Nivel.NIVEL_CINCO);
+
+	}
+
+}

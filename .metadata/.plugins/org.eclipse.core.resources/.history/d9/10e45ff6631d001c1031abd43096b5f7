@@ -1,0 +1,55 @@
+package entidades;
+
+import java.util.ArrayList;
+
+public class Categoria {
+	
+	private String nivel;
+	private ArrayList<Pregunta> preguntas;
+	
+	/**
+	 * @param nivel
+	 */
+	public Categoria(String nivel) {
+		this.nivel = nivel;
+	}
+
+	/**
+	 * @return the nivel
+	 */
+	public String getNivel() {
+		return nivel;
+	}
+
+	/**
+	 * @param nivel the nivel to set
+	 */
+	public void setNivel(String nivel) {
+		this.nivel = nivel;
+	}
+
+	/**
+	 * @return the preguntas
+	 */
+	public ArrayList<Pregunta> getPreguntas() {
+		return preguntas;
+	}
+
+	/**
+	 * @param preguntas the preguntas to set
+	 */
+	public void setPreguntas(ArrayList<Pregunta> preguntas) {
+		this.preguntas = preguntas;
+	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Categoria [nivel=" + nivel + ", preguntas=" + preguntas + "]";
+	}
+	
+	
+	
+}

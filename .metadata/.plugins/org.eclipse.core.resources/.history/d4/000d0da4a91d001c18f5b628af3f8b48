@@ -1,0 +1,39 @@
+package entidades;
+
+import java.util.ArrayList;
+
+import util.Posicion;
+
+public class Ronda {
+	
+	private String ronda;
+	private Premio premio;
+	private ArrayList<Pregunta> preguntas;
+	private Pregunta preguntaElegida;
+	
+	/**
+	 * @param ronda
+	 * @param premio
+	 * @param preguntas
+	 */
+	public Ronda(String ronda, Premio premio, ArrayList<Pregunta> preguntas) {
+		preguntas = new ArrayList<Pregunta>();
+		this.ronda = ronda;
+		this.premio = premio;
+		this.preguntas = preguntas;
+	}
+	
+	public Pregunta elegirPregunta(){
+		ArrayList<Pregunta> auxiliarPreguntas = new ArrayList<Pregunta>();
+		Pregunta preguntaElegida = null;
+		
+		for(Pregunta pregunta: preguntas){
+			if(pregunta.getCategoria().getNivel() == ronda){
+				auxiliarPreguntas.add(pregunta);
+			}
+		}
+		return preguntaElegida = auxiliarPreguntas.get(Posicion.obtenerPosicion());
+	}
+	
+	
+}

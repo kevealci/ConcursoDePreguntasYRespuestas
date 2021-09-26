@@ -1,0 +1,54 @@
+package admin;
+
+import java.util.ArrayList;
+
+import entidades.Juego;
+import entidades.Pregunta;
+
+public class AdminJuego {
+
+	public static void main(String[] args) {
+		
+		Juego juego = new Juego();
+		int opcion = 0;
+		ArrayList<Pregunta> preguntas = new ArrayList<Pregunta>();
+		boolean terminar = false;
+		boolean configurarJuego = false;
+		
+		while(opcion !=3){
+			
+			opcion = juego.menuPrincipal();
+			
+			switch(opcion){
+			case 1:
+				configurarJuego = true;
+				System.out.println("Juego Configurado, puede iniciar el juego");
+				break;
+			case 2:
+				if(configurarJuego){
+					opcion = 3;
+				}else{
+					System.out.println("Se debe configurar el juego primero!");
+				}
+				break;
+			case 3:
+				terminar = true;
+			}
+		}
+		
+		if(terminar){
+			System.out.println("Gracias por jugar");
+			return;
+		}
+		
+		//System.out.println("opcion1:"+configurarJuego);
+		
+		
+		preguntas = juego.configurarJuego();
+		System.out.println(preguntas);
+		
+		
+
+	}
+
+}

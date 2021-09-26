@@ -1,0 +1,10 @@
+package entidades;
+
+public class Opcion {
+	
+	private boolean valida;
+	private String opcion;
+	
+	
+	
+}

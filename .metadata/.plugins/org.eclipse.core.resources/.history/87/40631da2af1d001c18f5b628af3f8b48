@@ -1,0 +1,23 @@
+package test;
+
+import entidades.Categoria;
+
+public class TestCategoria {
+
+	public static void main(String[] args) {
+		
+		Categoria categoria1 = new Categoria("Juego", 1);
+		Categoria categoria2 = new Categoria("Historia", 2);
+		Categoria categoria3 = new Categoria("Arte", 3);
+		Categoria categoria4 = new Categoria("Musica", 4);
+		Categoria categoria5 = new Categoria("Cine", 5);
+		
+		System.out.println(categoria1);
+		System.out.println(categoria2);
+		System.out.println(categoria3);
+		System.out.println(categoria4);
+		System.out.println(categoria5);
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+package util;
+
+public class Estado {
+	
+	public static final String GANO = "G";
+	public static final String PERDIO = "P";
+	public static final String RETIRO = "R";
+
+}
