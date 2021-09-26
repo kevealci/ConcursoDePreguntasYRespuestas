@@ -3,7 +3,9 @@
 
 - El reto cuenta con un método de creación de las 25 preguntas y un método para la creación de los 5 premios que necesita usar el juego.
 - [Diagrama UML del reto](https://ibb.co/RbksQ22)
+- Para iniciar El programa se debe dar click en Run As -> Java Application (En Eclipse Neon3) la clase AdminJuego.
 
+	![iniciar programa](https://i.ibb.co/ZVLnTQG/15.png)
 
 
 
@@ -11,7 +13,7 @@
 
 
 - Lenguaje: Java 1.8
-- IDE: Eclipse Neon
+- IDE: Eclipse Neon 3
 
 # Capturas de pantalla de algunas salidas 👀
 
